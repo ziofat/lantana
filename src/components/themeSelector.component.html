@@ -1,0 +1,9 @@
+<div class="mdui-appbar">
+	<ul class="mdui-menu" id="theme-options">
+		<li class="mdui-menu-item" *ngFor="let theme of themeList">
+			<a class="mdui-ripple" (click)="chooseTheme(theme)">{{ theme.name }}</a>
+		</li>
+	</ul>
+
+	<button id="theme-selector" class="mdui-btn mdui-btn-block">{{ chosenTheme.name }} - {{ chosenHue.name }}</button>
+</div>

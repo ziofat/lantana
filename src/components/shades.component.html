@@ -1,0 +1,11 @@
+<div class="shade-list flex-row flex-around">
+	<div 
+		class="colour mdui-shadow-3 mdui-hoverable mdui-valign mdui-text-left mdui-ripple flex-item" 
+		*ngFor="let shade of shadeList" 
+		[ngStyle]="{'background-color': shade.colour, 'color': shade.white_ink?'#FFF':'#000'}"
+		(click)="copyColour(shade)"
+	>
+		<span> {{ shade.name }} </span>
+		<span class="hex"> {{ shade.colour }} </span>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="hue-list" id="hue-list">
+	<div class="hue-border"
+		*ngFor="let hue of hueList"
+		[ngStyle]="{'border-color': chosenHue.id === hue.id ? hue.primary : 'transparent'}">
+		<button class="hue"
+			[ngStyle]="{'background-color': hue.primary}"
+			(click)="chooseHue(hue)">
+		</button>
+	</div>
+</div>

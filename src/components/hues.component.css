@@ -1,0 +1,26 @@
+.hue-list {
+    padding: 8px;
+    height: 530px;
+    width: 24px;
+    position: relative;
+}
+
+button.hue {
+	width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+button.hue:focus {
+    outline: none;
+}
+
+.hue-border {
+	width: 16px;
+    height: 16px;
+    padding: 2px;
+    border: 2px solid transparent;
+    border-radius: 100%;
+}

@@ -1,11 +1,12 @@
 {
 	"name": "lantana",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A color picker for multiple themes for desktop",
 	"main": "app.js",
 	"scripts": {
 		"serve": "gulp && tsc && concurrently \"tsc -w\" \"lite-server\" \"gulp watch\"",
-		"start": "tsc && .\\node_modules\\.bin\\electron ."
+		"start": "gulp && tsc && .\\node_modules\\.bin\\electron .",
+		"build": "gulp && tsc && electron-packager app lantana --platform=win32 --arch=x64"
 	},
 	"keywords": [
 		"colorpicker",
@@ -42,6 +43,7 @@
 		"canonical-path": "0.0.2",
 		"concurrently": "^3.1.0",
 		"del": "^2.2.2",
+		"electron-packager": "^8.5.2",
 		"eslint": "^3.13.0",
 		"eslint-config-airbnb": "^13.0.0",
 		"eslint-plugin-import": "^2.2.0",
